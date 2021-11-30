@@ -40,6 +40,7 @@ class EnvVariables(metaclass=SingletonMeta):
     @property
     def base_url(self):
         return os.getenv("BASE_URL")
+        # return os.environ.get("BASE_URL")
 
     @property
     def basic_auth_username(self):
@@ -56,3 +57,4 @@ class EnvVariables(metaclass=SingletonMeta):
     @property
     def login_password(self):
         return os.getenv("LOGIN_PASSWORD")
+
